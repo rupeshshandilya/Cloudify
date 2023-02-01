@@ -1,0 +1,21 @@
+html, body {
+    width:500%;
+    height:500%;
+    background:rgb(238, 8, 8);
+    overflow:hidden;
+    margin:0;
+    padding:0;
+  }
+  
+  body {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  svg {
+    width:125%;
+    height:125%;
+    max-width:600px;
+    overflow:visible;
+  }

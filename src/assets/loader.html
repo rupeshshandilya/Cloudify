@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../style_loader.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320">
+      <g class="surface">
+        <path d="m164.5 37.5-63-20 88-11z" />
+        <path d="m164.5 37.5 101 9-76-40z" />
+        <path d="m265.5 46.5-31 59-70-68z" />
+        <path d="m230.5 207.5 4-102 70 45z" />
+        <path d="m304.5 150.5 18 43-38 64z" />
+        <path d="m230.5 207.5-96-73 100-29z" />
+        <path d="m230.5 207.5-25 82 79-32z" />
+        <path d="m205.5 289.5 79-32-65 58z" />
+        <path d="m205.5 289.5-86 26h100z" />
+        <path d="m205.5 289.5-88-41 113-41z" />
+        <path d="m205.5 289.5-88-41 2 67z" />
+        <path d="m117.5 248.5 2 67-56-26z" />
+        <path d="M117.5 248.5h-80l26 41z" />
+        <path d="m117.5 248.5-69-73-11 73z" />
+        <path d="m117.5 248.5 17-114 96 73z" />
+        <path d="m117.5 248.5 17-114-86 41z" />
+        <path d="m48.5 175.5-32 42 21 31z" />
+        <path d="m48.5 175.5-43-23 11 65z" />
+        <path d="m48.5 175.5 11-93 75 52z" />
+        <path d="m48.5 175.5 11-93-54 70z" />
+        <path d="m5.5 152.5 54-70-22-18z" />
+        <path d="m37.5 64.5 64-47-42 65z" />
+        <path d="m59.5 82.5 105-45-63-20z" />
+        <path d="m59.5 82.5 75 52 30-97z" />
+        <path d="m134.5 134.5 30-97 70 68z" />
+        <path d="m265.5 46.5 39 104-70-45z" />
+        <path d="m313.5 108.5-9 42 18 43z" />
+        <path d="m265.5 46.5 48 62-9 42z" />
+        <path d="m304.5 150.5-20 107-54-50z" />
+      </g>
+
+      <defs>
+        <radialGradient id="gradR">
+          <stop offset="0" stop-color="rgba(255,0,0,0.6)" />
+          <stop offset="1" stop-color="rgba(255,0,0,0)" />
+        </radialGradient>
+        <radialGradient id="gradG">
+          <stop offset="0" stop-color="rgba(0,255,0,0.6)" />
+          <stop offset="1" stop-color="rgba(0,255,0,0)" />
+        </radialGradient>
+        <radialGradient id="gradB">
+          <stop offset="0" stop-color="rgba(0,0,255,0.6)" />
+          <stop offset="1" stop-color="rgba(0,0,255,0)" />
+        </radialGradient>
+
+        <radialGradient id="gradW" cx="90%" cy="35%" fy="0%" r="120%">
+          <stop offset="0" stop-color="#444" stop-opacity="0.5" />
+          <stop offset="0.8" stop-color="#000" />
+        </radialGradient>
+
+        <mask id="m1">
+          <use href="#globe" fill="#fff" />
+        </mask>
+        <mask id="m2">
+          <rect width="150%" height="150%" x="-25%" y="-25%" fill="#fff" />
+          <use href="#globe" fill="#000" />
+        </mask>
+        <path
+          id="globe"
+          d="m189 7-87 11-64 47-32 88 11 65 47 70 54 28h101l65-58 38-64-9-86-48-61z"
+        />
+      </defs>
+
+      <use href="#globe" fill="url(#gradW)" opacity="0.4" />
+
+      <g mask="url(#m1)">
+        <circle
+          class="red redGlow"
+          cx="170"
+          cy="-30"
+          r="75"
+          fill="url('#gradR')"
+        />
+      </g>
+      <g class="redG">
+        <circle class="red" cx="170" cy="-30" r="12" fill="red" />
+      </g>
+
+      <g mask="url(#m1)">
+        <circle
+          class="green greenGlow"
+          cx="335"
+          cy="60"
+          r="75"
+          fill="url('#gradG')"
+        />
+      </g>
+      <g class="greenG">
+        <circle class="green" cx="335" cy="60" r="12" fill="rgb(0,255,0)" />
+      </g>
+
+      <g mask="url(#m1)">
+        <circle
+          class="blue blueGlow"
+          cx="300"
+          cy="280"
+          r="75"
+          fill="url('#gradB')"
+        />
+      </g>
+      <g class="blueG">
+        <circle class="blue" cx="300" cy="280" r="12" fill="rgb(0,0,255)" />
+      </g>
+    </svg>
+  </body>
+</html>
